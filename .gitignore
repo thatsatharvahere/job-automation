@@ -1,0 +1,9 @@
+config.yaml
+logs/
+__pycache__/
+*.pyc
+jobs.db
+tailored_resumes/
+Job_Applications_Tracker.xlsx
+~$*.xlsx
+.DS_Store

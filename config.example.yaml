@@ -1,0 +1,54 @@
+search:
+  keywords:
+    - "business analyst"
+    - "junior project manager"
+    - "management consultant"
+    - "graduate business analyst"
+    - "graduate management consultant"
+  location: "Ireland"
+  max_jobs_per_run: 20
+
+email:
+  sender_address: "your_email@gmail.com"
+  # Generate at: myaccount.google.com -> Security -> App Passwords
+  # Enable 2FA first, then create an App Password for "Mail"
+  sender_app_password: "YOUR_GMAIL_APP_PASSWORD"
+  recipient: "your_notification_email@gmail.com"
+
+resume:
+  path: "/path/to/your/Resume.docx"
+  output_dir: "/path/to/job-automation/tailored_resumes"
+
+groq:
+  # FREE — get your key at: console.groq.com -> API Keys -> Create API Key
+  # Sign up with Google, no billing ever needed.
+  # Free limits: 14,400 requests/day — far more than you'll ever use
+  api_key: "YOUR_GROQ_API_KEY"
+  model: "llama-3.1-8b-instant"
+
+linkedin:
+  # Your LinkedIn login credentials — used for Easy Apply only
+  email: "your_linkedin_email@example.com"
+  password: "YOUR_LINKEDIN_PASSWORD"
+  easy_apply_only: true  # Only apply to jobs with LinkedIn Easy Apply button
+
+indeed:
+  # Your Indeed login credentials
+  email: "your_indeed_email@example.com"
+  password: "YOUR_INDEED_PASSWORD"
+
+personal_info:
+  full_name: "Your Name"
+  phone: "+000000000"
+  city: "Your City"
+  country: "Your Country"
+  work_authorization: "Yes"
+  linkedin_url: "https://www.linkedin.com/in/yourname/"
+
+settings:
+  check_interval_hours: 6
+  # auto_apply: Set to true to automatically apply to matching jobs
+  # IMPORTANT: Start with false — review jobs via email first before enabling
+  auto_apply: false
+  dry_run: true  # Set to true to test without sending emails or applying
+  min_hours_before_apply: 1  # Wait at least 1 hour after posting before applying
